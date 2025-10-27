@@ -1,0 +1,20 @@
+[
+  {
+    "id": "mt07-2019",
+    "name": "Yamaha MT-07 (2019)",
+    "mileage": "12,500 miles · Fresh tyres",
+    "price": "£4,950",
+    "category": "naked",
+    "tags": ["Naked", "A2"],
+    "images": ["/images/mt07.jpg"]
+  },
+  {
+    "id": "cbr650r-2020",
+    "name": "Honda CBR650R (2020)",
+    "mileage": "8,900 miles · Akra can",
+    "price": "£6,199",
+    "category": "sport",
+    "tags": ["Sport"],
+    "images": ["/images/cbr650r.jpg"]
+  }
+]

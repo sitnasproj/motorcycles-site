@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>G&C Motorcycles — Premium Used Bikes & Servicing (Preston)</title>
+  <meta name="description" content="Premium used motorcycles, part-exchange, servicing and delivery. Honest bikes, no dealership nonsense." />
+  <link rel="canonical" href="https://gcmotorcycles.co.uk/" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ---------- HEADER ---------- -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>G&C Motorcycles</h1>
+      </div>
+      <nav class="links">
+        <a href="#stock">Stock</a>
+        <a href="#services">Services</a>
+        <a href="#hours">Hours</a>
+        <a href="#find-us">Find Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn">Menu</button>
+    </div>
+    <nav class="mobile-menu container" id="mnav">
+      <a href="#stock">Stock</a>
+      <a href="#services">Services</a>
+      <a href="#hours">Hours</a>
+      <a href="#find-us">Find Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ---------- HERO ---------- -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <h2>Premium Used Bikes & Honest Advice.</h2>
+        <p>Independent dealership in Preston. Quality used motorcycles, fair prices, and proper service — without the dealership nonsense.</p>
+        <div class="cta">
+          <a class="btn primary" href="#stock">Browse Stock</a>
+          <a class="btn ghost" href="#contact">Get a Valuation</a>
+        </div>
+        <div class="ribbon">
+          <div class="pill">Part-Exchange Welcome</div>
+          <div class="pill">Delivery Available</div>
+          <div class="pill">Open Mon–Sat</div>
+          <div class="pill">Straight-Talking Service</div>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <img src="/images/hero.jpg" alt="Motorcycles inside G&C showroom" loading="lazy" />
+      </aside>
+    </div>
+  </section>
+
+  <!-- ---------- STOCK ---------- -->
+  <section id="stock">
+    <div class="container">
+      <div class="sec-title">
+        <h3>Motorcycles In Stock</h3>
+        <div class="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="naked">Naked</button>
+          <button class="chip" data-filter="sport">Sport</button>
+          <button class="chip" data-filter="adventure">Adventure</button>
+          <button class="chip" data-filter="cruiser">Cruiser</button>
+        </div>
+      </div>
+      <div class="grid" id="stockGrid">
+        <!-- Populated dynamically by js/stock-loader.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- SERVICES ---------- -->
+  <section id="services">
+    <div class="container split">
+      <div class="panel">
+        <h3>What We Do</h3>
+        <ul class="list">
+          <li>Used bike sales — honest listings & fair pricing.</li>
+          <li>Valuations &amp; part-exchange.</li>
+          <li>Servicing &amp; pre-delivery checks.</li>
+          <li>Nationwide delivery available.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Why Choose Us</h3>
+        <p class="muted">Independent shop with a passion for bikes. You deal directly with the owner — not a salesman. No hidden fees, just straight talk.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- HOURS ---------- -->
+  <section id="hours">
+    <div class="container split">
+      <div class="panel">
+        <h3>Opening Hours</h3>
+        <ul class="list">
+          <li>Mon–Fri: 10 : 00 – 17 : 00</li>
+          <li>Saturday: 10 : 00 – 16 : 00</li>
+          <li>Sunday: Closed</li>
+        </ul>
+        <p class="muted">Always call before visiting to make sure we’re around.</p>
+      </div>
+      <div class="panel">
+        <h3>Quick Contact</h3>
+        <a class="btn primary" href="tel:+441772XXXXXX">Call Us</a>
+        <a class="btn ghost" href="mailto:sales@gcmotorcycles.co.uk">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- FIND US ---------- -->
+  <section id="find-us">
+    <div class="container split">
+      <div class="panel">
+        <h3>Find Us</h3>
+        <p class="muted">Laurels Farm, Longton Bypass, Longton, Preston, PR4 4RA</p>
+        <a class="btn ghost" href="https://maps.google.com/?q=PR4%204RA" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+      <div class="panel">
+        <iframe title="Map" width="100%" height="250" style="border:0;border-radius:12px;" loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-2.8,53.7,-2.6,53.75&layer=mapnik&marker=53.725,-2.70">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- CONTACT ---------- -->
+  <section id="contact">
+    <div class="container split">
+      <form class="panel" name="contact" method="POST" data-netlify="true">
+        <h3>Message Us</h3>
+        <input type="hidden" name="form-name" value="contact" />
+        <p><input name="name" placeholder="Your name" required /></p>
+        <p><input name="replyTo" placeholder="Email or phone" /></p>
+        <p><textarea name="message" placeholder="Your message…" required></textarea></p>
+        <p><button type="submit" class="btn primary">Send Message</button></p>
+      </form>
+      <div class="panel">
+        <h3>Trade-in &amp; Delivery</h3>
+        <p class="muted">Got a bike to part-ex? Tell us miles, condition and MOT. We can collect or deliver at fair rates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- FOOTER ---------- -->
+  <footer class="footer">
+    <div class="container">&copy; <span id="y"></span> G&C Motorcycles. All rights reserved.</div>
+  </footer>
+
+  <!-- ---------- SCRIPTS ---------- -->
+  <script src="/js/stock-loader.js"></script>
+</body>
+</html>
