@@ -4,10 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>G&C Motorcycles CMS</title>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
   </head>
   <body>
-    <!-- The CMS app renders here automatically -->
+    <!-- Netlify Identity for login -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Load CMS only after DOM is ready -->
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        var s = document.createElement("script");
+        s.src = "https://cdn.jsdelivr.net/npm/netlify-cms-app@2.15.72/dist/netlify-cms.js";
+        s.defer = true;
+        document.body.appendChild(s);
+      });
+    </script>
   </body>
 </html>
