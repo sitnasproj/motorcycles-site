@@ -158,5 +158,21 @@
 
   <!-- ---------- SCRIPTS ---------- -->
   <script src="/js/stock-loader.js"></script>
+  
+  <!-- Netlify Identity Widget -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script>
+  // Auto-open the widget when visiting with an invite link
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
