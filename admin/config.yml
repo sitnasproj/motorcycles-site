@@ -9,13 +9,19 @@ collections:
   - name: "bikes"
     label: "Bikes In Stock"
     label_singular: "Bike"
-    file: "bikes.json"
     description: "Manage the motorcycles in stock"
-    fields:
-      - { label: "ID", name: "id", widget: "string", required: true }
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Mileage / Details", name: "mileage", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options: ["naked", "sport", "adventure", "cruiser"] }
-      - { label: "Tags", name: "tags", widget: "list", default: [] }
-      - { label: "Images", name: "images", widget: "list", field: {label: "Image", name: "image", widget: "image"} }
+    files:
+      - file: "bikes.json"
+        label: "Bikes"
+        name: "bikes"
+        fields:
+          - { label: "ID", name: "id", widget: "string", required: true }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Mileage / Details", name: "mileage", widget: "string" }
+          - { label: "Price", name: "price", widget: "string" }
+          - { label: "Category", name: "category", widget: "select", options: ["naked", "sport", "adventure", "cruiser"] }
+          - { label: "Tags", name: "tags", widget: "list", default: [] }
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            field: { label: "Image", name: "image", widget: "image" }
